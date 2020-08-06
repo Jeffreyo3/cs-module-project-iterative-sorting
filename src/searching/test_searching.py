@@ -20,6 +20,10 @@ class SearchingTests(unittest.TestCase):
         self.assertEqual(binary_search(arr1, 0), 6)
         self.assertEqual(binary_search(arr2, 6), -1)
         self.assertEqual(binary_search(arr2, 0), -1)
+        self.assertEqual(binary_search(arr1, 5), 10)
+
+        arr3 = [2, 5]
+        self.assertEqual(binary_search(arr3, 5), 1)
 
 
 if __name__ == '__main__':
